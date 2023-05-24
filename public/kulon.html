@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="tampilan.css">
+    <script src="kab.js"></script>
+    <title>Document</title>
+  </head>
+
+  <body>
+    <header>
+		<h1>SEBARAN STUNTING DISETIAP PROVINSI DI INDONESIA</h1>
+	</header>
+	
+	<nav>
+		<ul>
+            <li><a href="index.html">Home</a></li>
+			<li><a href="#dataa">Sebaran Stunting di Kulon Progo</a></li>
+			<li><a href="#grafikk">Grafik</a></li>
+		</ul>
+	</nav>
+
+    <main>
+		<section id="dataa">
+			<h2>Sebaran Stunting disetiap Provinsi tahun 2022</h2>
+			<body>
+
+				<table border="1">
+					<thead>
+						<tr>
+                            <th>No</th>
+                            <th>Kapanewon</th>
+                            <th>Jumlah</th>
+                          </tr>
+					</thead>
+					<tbody id="mytable">
+				</table>
+			</body>
+		</section>
+
+		<section id="grafikk">
+			<h1>Grafik stunting tiap provinsi</h1>
+			<canvas id="barChart"></canvas>
+			<script src="package/chart.js/Chart.min.js"></script>
+		   
+			<script src="https://code.jquery.com/jquery-3.6.4.slim.min.js"></script>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+			<script src="package/js/oke.js"></script>
+		</section>
+
+	</main>
+  </body>
+</html>
