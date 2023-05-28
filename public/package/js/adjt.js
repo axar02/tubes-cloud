@@ -7,17 +7,10 @@ $(function() {
       {
         label: '',
         data: [],
-        borderWidth: 2,
-        fill: false
-      },
-      {
-        label: '',
-        data: [],
-       
-        borderWidth: 2,
+        borderWidth: 1,
         fill: false
       }
-      
+
     ]
   };
   var options = {
@@ -40,15 +33,15 @@ $(function() {
   };
   $.ajax({
     type: "GET",
-    url: "https://cloud-computing-54200-default-rtdb.firebaseio.com/ivan/-NW1UhL3lRlv1bC6-m0e/data.json?auth=90QNTHsfnRN75weBOeDAaN7jwdp5ta5OtOZUPcgv",    
+    url: "https://cloud-computing-54200-default-rtdb.firebaseio.com/ivan/-NW1UhL3lRlv1bC6-m0e.json?auth=90QNTHsfnRN75weBOeDAaN7jwdp5ta5OtOZUPcgv",    
     success: function(html){
 
-      for (var indexkecamatan = 0; indexkecamatan < 30; indexkecamatan++) {
-        multiLineData.labels.push(html.data[indexkecamatan].kapanewon)
-        multiLineData.datasets[0].label = "Laki-laki"
-        multiLineData.datasets[0].data.push(html.data[indexkecamatan].no)
-        multiLineData.datasets[1].label = "Perempuan"
-        multiLineData.datasets[1].data.push(html.data[indexkecamatan].pendek)
+      for (var indexKecamatan = 0; indexKecamatan < 10; indexKecamatan++) {
+        multiLineData.labels.push(html.data[indexKecamatan].kapanewon)
+        multiLineData.datasets[0].label = "Jumlah"
+        multiLineData.datasets[0].data.push(html.data[indexKecamatan].jumlah)
+        // multiLineData.datasets[1].label = "Jumlah"
+        // multiLineData.datasets[1].data.push(html.data[indexKecamatan].jumlah)
         
       }
 

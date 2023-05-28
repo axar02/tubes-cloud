@@ -45,9 +45,9 @@ $(function() {
 
       for (var indexkecamatan = 0; indexkecamatan < 30; indexkecamatan++) {
         multiLineData.labels.push(html.data[indexkecamatan].provinsi)
-        multiLineData.datasets[0].label = "Laki-laki"
+        multiLineData.datasets[0].label = "Jumlah balita"
         multiLineData.datasets[0].data.push(html.data[indexkecamatan].jumlahbalita)
-        multiLineData.datasets[1].label = "Perempuan"
+        multiLineData.datasets[1].label = "pendek"
         multiLineData.datasets[1].data.push(html.data[indexkecamatan].pendek)
         
       }
